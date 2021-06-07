@@ -1,0 +1,6 @@
+/* Rotación de Logo */
+
+nav img:hover {
+    transform: rotate(360deg);
+    transition: transform 2s;
+  }

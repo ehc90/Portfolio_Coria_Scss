@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="Google Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECoria - Portfolio</title>
+    <!---Agregando SEO----------------------->
+    <meta name="description" content="En esta sección se muestran los lenguajes de programación con las cuales he interactuado y con los que me encuentro capacitándome para actividades laborales, nuevos desafíos y proyectos personales como grupales.
+    Además se encuentra un espacio para poder enviarme un correo electrónico a mi correo personal">
+    <meta name="keywords" content="Python, Ruby, HTML5 & CSS3, JavaScript, Bootstrap & VSC Studio Code, Mysql, Correo Electrónico.">
+    <meta name="author" content="Emiliano Hernán Coria,  www.e-coria.com">
+    <!--Hoja de estilo------------------------>
+    <link rel="stylesheet" href="css/main.css">
+    <!--FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- FavIcon--->
+	<link rel="icon" href="img/mifavicon.ico">
+    
+</head>
+<body>
+    
+    <!--Sección Portfolio y Multimedia------------------->
+    <section id="portfolio">
+        <nav>
+        <!--logo--->
+            <a href="index.html">
+                <img src="img/logo_sinfondo.svg" class="logo">
+            </a>
+            <!-- ícono barra navegación----->       
+            <div class="toggle"></div>
+            <!--menú--------->            
+            <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>    
+            <li><a href="sobre_mi.html">Sobre mi</a></li>   
+            <li><a href="certificaciones.html">Certificaciones</a></li> 
+            <li class="active"><a href="mi_trabajo.html">Portfolio & Web</a></li>        
+            <li><a href="contacto.html">Contacto</a></li>   
+            </ul>
+            <!--lenguaje de la página-->
+            <a href="#" class="lang">Es</a>
+        </nav>
+
+        <!--Título----------->
+        <h1 class="p-headind"><font color="#17d1ac"><strong>Portfolio & Multimedia</strong></font></h1>
+        <!--portfolio-container------------>
+        <div class="p-container">
+        <!--portfolio-caja-1-------->
+        <div class="p-box">
+        <!--texto--------->
+        <div class="overlay-text">
+        <h1>Python</h1>
+        <p>Programación y Desarrollo de Aplicaciones</p>   
+        </div>
+        <!--bg-imagen------------->
+        <img src="img/python.png">
+            
+        </div>
+        <!--portfolio-caja-2-------->
+        <div class="p-box">
+            <!--texto--------->
+        <div class="overlay-text">
+        <h1>Ruby</h1>
+        <p>Programación Orientada a Objetos</p>   
+        </div>
+        <!--bg-imagen------------->
+        <img src="img/ruby_poo.png">
+        </div>
+        <!--portfolio-caja-3-------->
+        <div class="p-box">
+        <!--texto--------->
+        <div class="overlay-text">
+        <h1>HTML5 y CSS3</h1>
+        <p>Desarrollo Web</p>   
+        </div>
+        <!--bg-imagen------------->
+        <img src="img/html_css.png">
+        </div>
+        <!--portfolio-caja-4-------->
+        <div class="p-box">
+        <!--texto--------->
+        <div class="overlay-text">
+        <h1>JavaScript</h1>
+        <p>Desarrollo de Aplicaciones y Web</p>   
+        </div>
+        <!--bg-imagen------------->    
+        <img src="img/JavaScript.png">
+        </div>
+        <!--portfolio-caja-5-------->
+        <div class="p-box">
+        <!--texto--------->
+        <div class="overlay-text">
+        <h1>Bootstrap y VSC</h1>
+        <p>Programación y Desarrollo Web</p>   
+        </div>
+        <!--bg-imagen------------->    
+        <img src="img/bootstrap_y_vsc.png">
+        </div>
+        <!--portfolio-caja-6-------->
+        <div class="p-box">
+        <!--texto--------->
+        <div class="overlay-text">
+        <h1>MySQL</h1>
+        <p>Base de datos</p>   
+        </div>
+        <!--bg-imagen------------->    
+        <img src="img/mysql.png">
+        </div>
+        </div>
+
+        <!--Contact-btn------------------>
+	    <section id="contact-btn">
+        <!--heading-------------->
+        <h1 class="c-b-heading">¡Mi correo siempre está disponible!</h1>
+        <!--btn-------->
+            <button input type="button" value="Enviar un email" onclick="parent.location='mailto:ecoria543@gmail.com'">Enviar Correo</button>            
+        </section>
+        </section>
+
+ 	    <!--Footer ------------------>
+         <section>
+            <footer>
+                <strong>©2021.E-Coria</strong>.
+            </footer>  
+    </section>
+
+        <!--Jquery-------------------->
+	    <script type="text/javascript" src="jquery/jquery.js"></script>
+	    <!--Cambio de ícono barra de nav.--------->
+	    <script type="text/javascript">
+		$(document).ready(function(){
+			$('.toggle').click(function(){
+				$('.toggle').toggleClass('active')
+				$('nav ul').toggleClass('active-menu')
+			})
+		})
+	</script>
+</body>
+</html>

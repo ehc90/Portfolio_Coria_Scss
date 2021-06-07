@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="Google Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECoria - Contacto</title>
+    <!---Agregando SEO----------------------->
+    <meta name="description" content="En esta sección se encuentra el formulario de contacto para que pueda recibir sugerencias y consultas sobre nuevos proyectos.">
+    <meta name="keywords" content="Formulario, Contacto, Sugerencias, Proyectos.">
+    <meta name="author" content="Emiliano Hernán Coria,  www.e-coria.com">
+    <!--Hoja de estilo------------------------>
+    <link rel="stylesheet" href="css/main.css">
+    <!--FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- FavIcon--->
+	<link rel="icon" href="img/mifavicon.ico">
+	
+</head>
+<body>
+     <!--formulario de contacto------------------->
+	<section id="contact-form">
+        <nav>
+            <!--logo--->
+            <a href="index.html">
+                <img src="img/logo_sinfondo.svg" class="logo">
+            </a>
+            <!-- ícono barra navegación----->       
+            <div class="toggle"></div>
+            <!--menu--------->
+            <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>	
+            <li><a href="sobre_mi.html">Sobre mi</a></li>	
+            <li><a href="certificaciones.html">Certificaciones</a></li>	
+            <li><a href="mi_trabajo.html">Portfolio & Web</a></li>		
+            <li class="active"><a href="contacto.html">Contacto</a></li>	
+            </ul>
+            <!--language-->
+            <a href="#" class="lang">Es</a>
+        </nav>
+        <form>
+            <!--izquierda--------------------------------------->
+            <div class="contact-left">
+            <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">¿Sugerencias o Proyectos?</font></h1>
+            <!--nombre-------->
+            <div class="f-name">
+            <font >Nombre</font>
+            <input type="text" placeholder="Nombre y Apellido"/>
+            </div>
+            <!--email-------->
+            <div class="f-email">
+            <font >Email</font>
+            <input type="email" placeholder="Ejemplo@gmail.com"/>
+            </div>
+            </div>
+            <!--derecha------------------------------------------->
+            <div class="contact-right">
+            <!--mensaje-------->
+            <div class="message">
+            <font >Mensaje</font>
+            <textarea name="message" rows="5" cols="20" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <!--btn-enviar------------>
+            <button>Enviar</button>
+            </div>
+        </form>
+    </section>
+
+		<!--Footer ------------------>
+		<section>
+			<footer>
+				<strong>©2021.E-Coria</strong>.
+			</footer>  
+		</section> 
+        
+
+         <!--Jquery-------------------->
+        <script type="text/javascript" src="jquery/jquery.js"></script>
+        <!--Cambio de ícono barra de nav.--------->
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.toggle').click(function(){
+                        $('.toggle').toggleClass('active')
+                        $('nav ul').toggleClass('active-menu')
+                        })
+                    })
+            </script>
+</body>
+</html>

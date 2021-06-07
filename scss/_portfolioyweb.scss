@@ -1,0 +1,135 @@
+/* Sección Portfolio & Web - mi_trabajo */
+
+#portfolio {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 2% 20px 2%;
+  }
+  
+  .p-headind {
+    font-family: Calibri;
+    font-size: 2rem;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 10px 20px;
+    background-color: #292929;
+    letter-spacing: 2px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .p-box {
+    background-color: #1F1F1F;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 2px 2px 13px rgba(0, 0, 0, 0.3);
+    position: relative;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .p-container {
+    width: 90%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 10px;
+  }
+  
+  .overlay-text {
+    font-family: Calibri;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(23, 209, 172, 0.8);
+    display: none;
+  
+    h1 {
+      color: #FFFFFF;
+    }
+  }
+  
+  p {
+    color: #FFFFFF;
+  }
+  
+  .overlay-text {
+    h1 {
+      font-size: 2.2rem;
+      margin: 0px;
+      padding: 0px;
+      letter-spacing: 2px;
+    }
+  
+    p {
+      font-size: 1.2rem;
+      margin: 0px;
+    }
+  }
+  
+  .p-box:hover .overlay-text {
+    display: flex;
+  }
+  
+  /* Botón de Contacto */
+  
+  #contact-btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #dfe6e9;
+    margin: 20px 0px;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 20px rgba(0, 0, 0, 0.4);
+  }
+  
+  .c-b-heading {
+    font-size: 2rem;
+    color: #1E1E1E;
+    font-family: calibri;
+    margin: 10px;
+    padding: 5px;
+    letter-spacing: 4px;
+    border-bottom: 2px solid #1E1E1E;
+  }
+  
+  #contact-btn button {
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-family: calibri;
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    background-color: #1E1E1E;
+    border: none;
+    outline: none;
+    box-shadow: 2px 5px 6px rgba(0, 0, 0, 0.2);
+  
+    &:hover {
+      background-color: #17d1ac;
+      color: #000000;
+      transition: all ease 0.5s;
+      font-weight: bold;
+    }
+  }
+  

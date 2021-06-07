@@ -1,0 +1,13 @@
+/* Gradient para botón "+info" "Enviar Correo" y "Enviar Formulario" */
+
+button {
+    background: rgb(0, 255, 111);
+    background: linear-gradient(90deg, rgba(0, 255, 111, 1) 23%, rgba(4, 164, 235, 0.8295693277) 50%, rgba(20, 244, 203, 1) 88%);
+    cursor: pointer;
+  }
+  
+  /* Scale para imagen - sobre_mi */
+  
+  .about-me:hover {
+    transform: scale(1.1, 1.1);
+  }

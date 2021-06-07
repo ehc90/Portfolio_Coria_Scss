@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="Google Chrome">
+	<title>ECoria - Inicio</title>
+	<!---Agregando SEO----------------------->
+	<meta name="description" content="Mi sitio web es un Portfolio que contiene información relevante y personal como así también académica y profesional sobre mí.">
+	<meta name="keywords" content="Datos personales, Curriculum Vitae, Formación, Antecedentes laborales, Redes sociales.">
+	<meta name="author" content="Emiliano Hernán Coria,  www.e-coria.com">
+	<!--Hoja de estilo------------------------>	
+	<link rel="stylesheet" href="css/main.css">
+	<!--FontAwesome---------------->
+	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+	<!-- FavIcon--->
+	<link rel="icon" href="img/mifavicon.ico">
+	
+</head>
+
+<body>
+
+	<section id="main">
+        <!--navegación-------------------------------->
+        <nav>
+        	<!--logo--->
+        	<a href="index.html">
+        		<img src="img/logo_sinfondo.svg" class="logo">
+        	</a>
+        <!-- ícono barra navegación----->       
+        <div class="toggle"></div>
+        <!--menú--------->
+        <ul class="menu">
+        <li class="active"><a href="index.html">Inicio</a></li>	
+        <li><a href="sobre_mi.html">Sobre mi</a></li>	
+        <li><a href="certificaciones.html">Certificaciones</a></li>	
+        <li><a href="mi_trabajo.html">Portfolio & Web</a></li>		
+        <li><a href="contacto.html">Contacto</a></li>	
+        </ul>
+        <!--lenguaje del sitio-->
+        <a href="#" class="lang">Es</a>
+        </nav>
+
+         <!--nombre--------------------------->
+		<div class="name">
+	        <!--saludo------->
+	        <p>¡Hola! mi nombre es</p>
+	        <!--mi nombre--->
+	        <h1><font color="#17d1ac">Emiliano Hernán Coria</font></h1>
+	        <!--detalles debajo--------------->
+	        <p class="details">Esta es mi primer página web <br> Y la realicé en el curso de Desarrollo Web con <strong>CoderHouse ☺</strong></p>
+	        <!--cv botón-------------------->
+	        <a href="https://drive.google.com/file/d/1h4rBlMLGD4kNbZQy_wFAj_N7VhUjHE2q/view?usp=sharing" class="cv-btn" target="_blank">Mi currículum</a>
+	    </div>
+
+	    <!-- mis redes sociales---------------->
+	        <div class="social">
+		        <a href="https://www.facebook.com/emiliano.coria.963/" target="_blank"><i class="fab fa-facebook-f"></i></a>	
+		        <a href="https://www.linkedin.com/in/ecoria543/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		        <a href="https://github.com/ehc90" target="_blank"><i class="fab fa-github"></i></a>
+		        <a href="https://www.youtube.com/channel/UCQl7E8CJXbyfGClppMxlNsA" target="_blank"><i class="fab fa-youtube"></i></a>	
+	        </div>
+	</section>
+
+		<!--Footer ------------------>
+		<section>
+			<footer>
+				<strong>©2021.E-Coria</strong>.
+			</footer>  
+		</section>
+
+		<!--Jquery-------------------->
+		<script type="text/javascript" src="jquery/jquery.js"></script>
+		<!--Cambio de ícono barra de nav.--------->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.toggle').click(function(){
+					$('.toggle').toggleClass('active')
+					$('nav ul').toggleClass('active-menu')
+				})
+			})
+		</script>	
+</body>
+</html>

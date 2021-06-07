@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="Google Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECoria - Sobre mi</title>
+    <!---Agregando SEO----------------------->
+    <meta name="description" content="En esta sección de mi Portfolio se encuentra mi desarrollo académico, las certificaciones profesionales obtenidas y proyección laboral">
+    <meta name="keywords" content="Licenciado en Gestión Educativa, Técnico Superior En Administración, Certificados, Proyección Laboral.">
+    <meta name="author" content="Emiliano Hernán Coria,  www.e-coria.com">
+    <!--Hoja de estilo------------------------>  
+    <link rel="stylesheet" href="css/main.css">
+    <!--FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- FavIcon--->
+	<link rel="icon" href="img/mifavicon.ico">
+	
+</head>
+<body>
+     <!--Sección Sobre Mi----------------------->
+		<section id="about">
+            <nav>
+                <!--logo--->
+                <a href="index.html">
+                    <img src="img/logo_sinfondo.svg" class="logo">
+                </a>
+                <!-- ícono barra navegación----->       
+                <div class="toggle"></div>
+                <!--menú--------->
+                <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>	
+                <li class="active"><a href="sobre_mi.html">Sobre mi</a></li>	
+                <li><a href="certificaciones.html">Certificaciones</a></li>	
+                <li><a href="mi_trabajo.html">Portfolio & Web</a></li>		
+                <li><a href="contacto.html">Contacto</a></li>	
+                </ul>
+                <!--lenguaje-->
+                <a href="#" class="lang">Es</a>
+            </nav>
+
+            <!--texto---------------------->
+                <div class="about-text">
+                    <h1>Sobre mi</h1>
+                    <h2>Licenciado en Gestión Educativa y Técnico Superior en Administración</h2>
+                    <p>Me trasé la meta de aprender los nuevos lenguajes de programación para poder mejorar la calidad de la educación en mi país, <strong>Argentina</strong>.</p>
+                   <a href="https://drive.google.com/drive/folders/1LibS4Td2m3el3Lr4NF5aS_6VuNULTldp?usp=sharing" target="_blank"><button><strong>Más información</strong></button></a>
+                </div>
+            
+            <!--Imagen de fondo----------------->
+                <div class="about-me">
+                    <img alt="Yo con Limón_faisán" src="img/foto_con_Limón_Faisán.png"/>	
+                </div>
+        </section>
+
+ 	        <!--Footer ------------------>
+            <section>
+                <footer>
+                    <strong>©2021.E-Coria</strong>.
+                </footer>  
+            </section>
+
+            <!--Jquery-------------------->
+            <script type="text/javascript" src="jquery/jquery.js"></script>
+            <!--Cambio de ícono barra de nav.--------->
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    $('.toggle').click(function(){
+                    $('.toggle').toggleClass('active')
+                    $('nav ul').toggleClass('active-menu')
+                    })
+                })
+            </script>
+</body>
+</html>
